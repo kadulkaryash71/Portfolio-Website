@@ -1,3 +1,7 @@
+# About this repository
+
+This repository is dedicated to a personal portfolio. The author strongly advices the readers not to copy/clone/imitate this repository for personal gains. This project is copyrighted, thus an imitator can be legally charged or prosecuted for the same. The readers can use this repository to understand the file organisation and code simplicity. 
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
