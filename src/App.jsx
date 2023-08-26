@@ -1,4 +1,5 @@
 import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
 
 function App() {
 	return (
@@ -6,20 +7,16 @@ function App() {
 			<header className="App-header">
 				<Navbar />
 			</header>
-			<main className="text-lg p-5 flex h-full justify-evenly items-center">
-				<h1 className="text-4xl font-bold">Hello and welcome to React + TailwindCSS portfolio website</h1>
+			<main className="text-lg p-5 h-full justify-evenly items-center bg-gradient-to-br from-slate-950 via-slate-900 to-black text-white">
+				<Hero />
 				<ul className="list-inside">
 					<p className="font-bold">Components to be included:</p>
-					<li className="font-semibold">
-						Hero section
-						<ul className="list-inside indent-4">
-							<li>My domain name/s</li>
-							<li>A short description</li>
-							<li>My downloadable resume</li>
-							<li>My Image</li>
-						</ul>
-					</li>
+					<li className="font-semibold">Education timeline</li>
 					<li className="font-semibold">Work Experience</li>
+					<li id="projects" className="font-semibold">Projects</li>
+					<li id="skills" className="font-semibold">Skills</li>
+					<li id="recommendations" className="font-semibold">Testimonials and/or Recommendations (possibly fetched from LinkedIn)</li>
+					<li className="font-semibold">Certifications and Participations</li>
 					<li id="contact" className="font-semibold">
 						Contact
 						<ul className="indent-4">
@@ -28,11 +25,6 @@ function App() {
 							<li>Floating/Fixed buttons to my social media</li>
 						</ul>
 					</li>
-					<li className="font-semibold">Education timeline</li>
-					<li id="projects" className="font-semibold">Projects</li>
-					<li id="skills" className="font-semibold">Skills</li>
-					<li id="recommendations" className="font-semibold">Testimonials and/or Recommendations (possibly fetched from LinkedIn)</li>
-					<li className="font-semibold">Certifications and Participations</li>
 					<li className="font-semibold">Outro and Salutations</li>
 					<li className="font-semibold">Footer for &copy; copyright and licensing</li>
 				</ul>
