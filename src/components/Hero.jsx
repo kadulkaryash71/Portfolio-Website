@@ -22,7 +22,7 @@ const Hero = () => {
                         Dublin City University, Dublin, Ireland
                     </p>
                 </div>
-                <button className="px-3 py-2 ring-2 hover:ring-slate-200 rounded-xl hover:bg-gradient-to-l hover:from-cyan-950 hover:to-slate-900 hover:ring-2 transition-all duration-300">Contact Me</button>
+                <a href="#contact" className="my-3 px-3 py-2 ring-2 hover:ring-slate-200 rounded-xl hover:bg-gradient-to-l hover:from-cyan-950 hover:to-slate-900 hover:ring-2 transition-all duration-300">Contact Me</a>
             </div>
             <div className="right p-10 md:w-5/12">
                 <div className="img-bg-box bg-slate-700 rounded-t-full h-full">

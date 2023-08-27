@@ -1,5 +1,6 @@
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
+import Education from "./components/Education";
 
 function App() {
 	return (
@@ -9,9 +10,9 @@ function App() {
 			</header>
 			<main className="text-lg p-5 h-full justify-evenly items-center bg-gradient-to-br from-slate-950 via-slate-900 to-black text-white">
 				<Hero />
+				<Education />
 				<ul className="list-inside">
 					<p className="font-bold">Components to be included:</p>
-					<li className="font-semibold">Education timeline</li>
 					<li className="font-semibold">Work Experience</li>
 					<li id="projects" className="font-semibold">Projects</li>
 					<li id="skills" className="font-semibold">Skills</li>
