@@ -69,7 +69,7 @@ const Education = () => {
             <h2 className="my-6 text-3xl font-bold">Academic Journey</h2>
             <ol class="relative mx-5 my-2 py-3 border-l border-gray-200 dark:border-gray-700">
                 {timelineEl.map((item, index) =>
-                    <li className="mb-10 ml-4 md:w-3/4">
+                    <li key={index} className="mb-10 ml-4 md:w-3/4">
                         <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
                         <time className="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">{item.periodFrom} — {item.periodTo}</time>
                         <span className="flex items-center my-2 transition duration-300 hover:text-white">
