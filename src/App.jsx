@@ -1,6 +1,8 @@
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import Education from "./components/Education";
+import WorkEx from "./components/WorkEx";
+
 
 function App() {
 	return (
@@ -11,9 +13,9 @@ function App() {
 			<main className="text-lg p-5 h-full justify-evenly items-center bg-gradient-to-br from-slate-950 via-slate-900 to-black text-white">
 				<Hero />
 				<Education />
+				<WorkEx />
 				<ul className="list-inside">
 					<p className="font-bold">Components to be included:</p>
-					<li className="font-semibold">Work Experience</li>
 					<li id="projects" className="font-semibold">Projects</li>
 					<li id="skills" className="font-semibold">Skills</li>
 					<li id="recommendations" className="font-semibold">Testimonials and/or Recommendations (possibly fetched from LinkedIn)</li>
