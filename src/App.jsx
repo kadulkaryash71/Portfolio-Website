@@ -4,6 +4,9 @@ import Education from "./components/Education";
 import WorkEx from "./components/WorkEx";
 import Projects from "./components/Projects";
 import Skills from "./components/Skills";
+import Participations from "./components/Participations";
+
+import { FaArrowUp } from "react-icons/fa";
 
 
 function App() {
@@ -18,11 +21,10 @@ function App() {
 				<WorkEx />
 				<Projects />
 				<Skills />
-
+				<Participations />
 				<ul className="list-inside">
 					<p className="font-bold">Components to be included:</p>
 					<li id="recommendations" className="font-semibold">Testimonials and/or Recommendations (possibly fetched from LinkedIn)</li>
-					<li className="font-semibold">Certifications and Participations</li>
 					<li id="contact" className="font-semibold">
 						Contact
 						<ul className="indent-4">
@@ -33,10 +35,12 @@ function App() {
 					</li>
 					<li className="font-semibold">Outro and Salutations</li>
 					<li className="font-semibold">Footer for &copy; copyright and licensing</li>
-					<li className="font-semibold">Back To Top Button</li>
 					<li className="font-semibold">Sticky Navbar with reduced opacity</li>
 				</ul>
 			</main>
+			<a href="#" id="backtotop" className="p-4 m-4 w-fit fixed bottom-0 right-0 text-xl rounded-full bg-slate-600 text-slate-900 opacity-80 ring-white transition duration-300 hover:opacity-100 hover:ring-2">
+				<FaArrowUp color="white" />
+			</a>
 		</div>
 	);
 }

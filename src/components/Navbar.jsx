@@ -14,12 +14,12 @@ const Navbar = () => {
             </div>
             <nav id="navbar" className="flex justify-center items-center">
                 <ul className="nav-list hidden md:flex text-gray-200">
-                    <li id="active-nav-item" className="nav-item p-2"><a href="#" className="nav-link">Home</a></li>
-                    <li className="nav-item p-2"><a href="#projects" className="nav-link">Projects</a></li>
-                    <li className="nav-item p-2"><a href="#experience" className="nav-link">Experience</a></li>
-                    <li className="nav-item p-2"><a href="#skills" className="nav-link">Skills</a></li>
-                    <li className="nav-item p-2"><a href="#recommendations" className="nav-link">Recommendations</a></li>
-                    <li className="nav-item p-2"><a href="#contact" className="nav-link">Contact</a></li>
+                    <li id="active-nav-item" className="nav-item p-2 transition-all duration-75 rounded-md hover:border-b-2 hover:border-white"><a href="#" className="nav-link">Home</a></li>
+                    <li className="nav-item p-2 transition-all duration-75 rounded-md hover:border-b-2 hover:border-white"><a href="#projects" className="nav-link">Projects</a></li>
+                    <li className="nav-item p-2 transition-all duration-75 rounded-md hover:border-b-2 hover:border-white"><a href="#experience" className="nav-link">Experience</a></li>
+                    <li className="nav-item p-2 transition-all duration-75 rounded-md hover:border-b-2 hover:border-white"><a href="#skills" className="nav-link">Skills</a></li>
+                    <li className="nav-item p-2 transition-all duration-75 rounded-md hover:border-b-2 hover:border-white"><a href="#recommendations" className="nav-link">Recommendations</a></li>
+                    <li className="nav-item p-2 transition-all duration-75 rounded-md hover:border-b-2 hover:border-white"><a href="#contact" className="nav-link">Contact</a></li>
                 </ul>
                 <div className="theme-button p-2">
                     {theme === "dark"

@@ -9,7 +9,7 @@ import { GiPublicSpeaker } from "react-icons/gi";
 
 const OneSkill = ({ icon, iconName, styles }) => {
     return (
-        <div className={`m-2 p-5 flex flex-col items-center border-2 rounded-lg border-white transition-all duration-300 hover:border-b-4 hover:scale-110 `+ styles}>
+        <div className={`p-5 flex flex-col items-center border-2 rounded-lg border-white cursor-pointer transition-all duration-300 hover:border-b-4 hover:scale-110 `+ styles}>
             <span className="icon text-6xl mb-4">{icon}</span>
             <span className="name w-full text-center">{iconName}</span>
         </div>
@@ -100,7 +100,7 @@ function Skills() {
     return (
         <div id="skills" className="my-4">
             <h2 className=" text-3xl font-bold">Skills</h2>
-            <div className="card-collection px-5 my-5 grid grid-cols-5 gap-3">
+            <div className="card-collection px-5 my-5 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
                 {skillsCol.map((item, index) => <OneSkill key={index} icon={item.icon} iconName={item.name} styles={item.styles} />)}
             </div>
         </div>
