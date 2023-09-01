@@ -2,6 +2,7 @@ import React from 'react';
 import { FaDev, FaFacebook, FaGithub, FaLinkedin, FaTwitter, FaWhatsapp, FaYoutube } from 'react-icons/fa';
 import { SiHashnode, SiLetterboxd } from 'react-icons/si';
 import { MdEmail } from 'react-icons/md';
+import { BsFillArrowRightCircleFill } from 'react-icons/bs';
 import Map from "./Map";
 
 
@@ -20,29 +21,35 @@ function Contact() {
                         <h3 className="text-4xl text-blue-400 font-bold capitalize">Feel free to drop a message here</h3>
                         <p className="subtitle my-1 text-lg text-white cursor-pointer transition-all duration-300 hover:text-blue-200 italic">I would like to hear from you! Go on, drop a message for me below :D</p>
                     </div>
-                    <form action="" className="w-full text-slate-950 text-lg">
+                    <form action="" className="w-full text-black dark:text-gray-50 text-base">
                         <input
                             type="email"
                             name="email"
                             id="email"
                             placeholder="Your Email"
-                            className="w-full my-2 bg-opacity-0 rounded-xl transition-all duration-300 focus:ring-4"
+                            required
+                            className="w-full my-2 p-2 dark:bg-slate-800 rounded-xl transition-all duration-300 focus:ring-4"
                         />
                         <input
                             type="text"
                             name="subject"
                             id="Subject"
                             placeholder="Type a Subject"
-                            className="w-full my-2 bg-opacity-0 rounded-xl  transition-all duration-300 focus:ring-4"
+                            required
+                            className="w-full my-2 p-2 dark:bg-slate-800 rounded-xl transition-all duration-300 focus:ring-4"
                         />
-                        <textarea
-                            name="message"
-                            id="message"
-                            rows="10"
-                            placeholder="Write your message..."
-                            className="w-full h-full my-2 p-2 rounded-xl text-base transition-all duration-300 focus:ring-4"
-                        >
-                        </textarea>
+                        <div class="w-full mt-2 mb-4 border  rounded-xl  dark:bg-slate-700 dark:border-slate-600">
+                            <div class="rounded-t-lg dark:bg-slate-800">
+                                <label for="comment" class="sr-only">Your comment</label>
+                                <textarea id="comment" rows="5" class="w-full p-2 text-sm text-gray-900 rounded-t-xl bg-white  resize-none dark:bg-gray-800 focus:ring-0 dark:text-white dark:placeholder-gray-400" placeholder="Write a message..." required></textarea>
+                            </div>
+                            <div class="flex items-center justify-between px-3 py-2 border-t dark:border-gray-600">
+                                <button type="submit" class="inline-flex items-center justify-between py-2.5 px-4 text-base font-medium text-center text-white bg-blue-700 rounded-lg transition-all duration-300 focus:ring-4 focus:ring-blue-200 dark:focus:ring-blue-900 hover:bg-blue-800">
+                                    <span className="mx-1">Send</span>
+                                    <BsFillArrowRightCircleFill />
+                                </button>
+                            </div>
+                        </div>
                     </form>
                     <div className="social-media-icons flex flex-wrap justify-center md:justify-start text-2xl">
                         <div className="social-icon mt-2 mx-2 opacity-80 cursor-pointer transition-all duration-300 hover:scale-125 hover:opacity-100">
