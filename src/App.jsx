@@ -5,6 +5,7 @@ import WorkEx from "./components/WorkEx";
 import Projects from "./components/Projects";
 import Skills from "./components/Skills";
 import Participations from "./components/Participations";
+import Contact from "./components/Contact";
 
 import { FaArrowUp } from "react-icons/fa";
 
@@ -22,17 +23,10 @@ function App() {
 				<Projects />
 				<Skills />
 				<Participations />
+				<Contact />
 				<ul className="list-inside">
 					<p className="font-bold">Components to be included:</p>
 					<li id="recommendations" className="font-semibold">Testimonials and/or Recommendations (possibly fetched from LinkedIn)</li>
-					<li id="contact" className="font-semibold">
-						Contact
-						<ul className="indent-4">
-							<li>Map using Leaflet to mark my presence/address</li>
-							<li>Email Service</li>
-							<li>Floating/Fixed buttons to my social media</li>
-						</ul>
-					</li>
 					<li className="font-semibold">Outro and Salutations</li>
 					<li className="font-semibold">Footer for &copy; copyright and licensing</li>
 					<li className="font-semibold">Sticky Navbar with reduced opacity</li>

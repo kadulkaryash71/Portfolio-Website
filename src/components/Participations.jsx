@@ -33,9 +33,9 @@ function Participations() {
                 <span className="my-2 px-1 flex items-center rounded-md text-base transition duration-300 hover:text-blue-600 hover:border-t-2 hover:border-blue-300">{isViewAll ? "Collapse" : "View all " + certsCol.length} <FiChevronsDown /></span>
             </button>
             <div className="container grid md:grid-cols-2 gap-4 m-auto">
+                {certsCol.slice(0, 4).map((item, index) => <CardEl key={index} title={item.title} link={item.link} body={item.body} authority={item.authority} />)}
                 {isViewAll
-                    ? certsCol.map((item, index) => <CardEl key={index} title={item.title} link={item.link} body={item.body} authority={item.authority} />)
-                    : certsCol.slice(0, 4).map((item, index) => <CardEl key={index} title={item.title} link={item.link} body={item.body} authority={item.authority} />)
+                    && certsCol.slice(4, certsCol.length).map((item, index) => <CardEl key={index} title={item.title} link={item.link} body={item.body} authority={item.authority} />)
                 }
             </div>
         </div>

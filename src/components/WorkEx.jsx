@@ -10,7 +10,7 @@ const WorkEx = () => {
     const workTimelineEl = [
         {
             periodFrom: "September 2023",
-            periodTo: "october 2023",
+            periodTo: "October 2023",
             company: "The Sparks Foundation",
             companyLogo: TSF,
             active: true,
@@ -88,7 +88,7 @@ const WorkEx = () => {
                                 </svg>}
                         </span>
                         <h3 className="flex items-center w-fit mb-1 text-xl font-semibold text-gray-900 dark:text-white transition-all ease-linear duration-300">{item.company} {item.active && <ActiveBadge />}</h3>
-                        <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">{item.periodFrom} —  {item.periodTo}</time>
+                        <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500 transition-all duration-300 hover:text-gray-300">{item.periodFrom} —  {item.periodTo}</time>
                         <p className="mb-1 text-lg font-normal text-gray-500 text-justify transition-all duration-300 hover:text-gray-100 dark:text-gray-400">{item.role}</p>
                         <p className="mb-4 text-base font-normal text-gray-500 text-justify transition-all duration-300 hover:text-gray-100 dark:text-gray-400">{item.desc}</p>
                         {item.enableButton && <a href={item.buttonLink} target="_blank" className="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg transition-all duration-300 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:outline-none focus:ring-gray-200 focus:text-blue-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700 dark:focus:ring-gray-700"><svg className="w-3.5 h-3.5 mr-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
