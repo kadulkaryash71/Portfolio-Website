@@ -27,8 +27,8 @@ function Participations() {
     }
 
     return (
-        <div id="participations" className="my-4">
-            <h2 className="my-6 text-3xl font-bold">Certifications & Participations</h2>
+        <div id="participations" className="my-10">
+            <h2 className="text-3xl font-bold">Certifications & Participations</h2>
             <button onClick={() => setViewAll(!isViewAll)} className="w-full flex items-center justify-end flex-nowrap" >
                 <span className="my-2 px-1 flex items-center rounded-md text-base transition duration-300 hover:text-blue-600 hover:border-t-2 hover:border-blue-300">{isViewAll ? "Collapse" : "View all " + certsCol.length} <FiChevronsDown /></span>
             </button>

@@ -9,7 +9,7 @@ import Map from "./Map";
 function Contact() {
 
     return (
-        <div id="contact" className="my-4">
+        <div id="contact" className="my-10">
             <h2 className="mt-6 text-3xl font-bold">Contact</h2>
             <div className="w-full flex flex-col-reverse md:items-center md:flex-row">
                 <div className="left md:w-1/2 w-full p-5 flex flex-col-reverse md:flex-col rounded-full">

@@ -98,7 +98,7 @@ function Skills() {
     ]
 
     return (
-        <div id="skills" className="my-4">
+        <div id="skills" className="my-10">
             <h2 className=" text-3xl font-bold">Skills</h2>
             <div className="card-collection px-5 my-5 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
                 {skillsCol.map((item, index) => <OneSkill key={index} icon={item.icon} iconName={item.name} styles={item.styles} />)}
