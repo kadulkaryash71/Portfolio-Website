@@ -21,7 +21,7 @@ function Contact() {
                         <h3 className="text-4xl text-blue-400 font-bold capitalize">Feel free to drop a message here</h3>
                         <p className="subtitle my-1 text-lg text-white cursor-pointer transition-all duration-300 hover:text-blue-200 italic">I would like to hear from you! Go on, drop a message for me below :D</p>
                     </div>
-                    <form action="" method="POST" className="w-full text-black dark:text-gray-50 text-base">
+                    <form action="https://formspree.io/f/mdorzpyj" method="POST" className="w-full text-black dark:text-gray-50 text-base">
                         <input
                             type="email"
                             name="email"
@@ -41,7 +41,7 @@ function Contact() {
                         <div class="w-full mt-2 mb-4 border  rounded-xl  dark:bg-slate-700 dark:border-slate-600">
                             <div class="rounded-t-lg dark:bg-slate-800">
                                 <label for="comment" class="sr-only">Your comment</label>
-                                <textarea id="comment" rows="5" class="w-full p-2 text-gray-900 rounded-t-xl bg-white  resize-none dark:bg-gray-800 focus:ring-0 dark:text-white dark:placeholder-gray-400" placeholder="Write a message..." required></textarea>
+                                <textarea id="comment" name="message" rows="5" class="w-full p-2 text-gray-900 rounded-t-xl bg-white  resize-none dark:bg-gray-800 focus:ring-0 dark:text-white dark:placeholder-gray-400" placeholder="Write a message..." required></textarea>
                             </div>
                             <div class="flex items-center justify-between px-3 py-2 border-t dark:border-gray-600">
                                 <button type="submit" class="inline-flex items-center justify-between py-2.5 px-4 text-base font-medium text-center text-white bg-blue-700 rounded-lg transition-all duration-300 focus:ring-4 focus:ring-blue-200 dark:focus:ring-blue-900 hover:bg-blue-800">
