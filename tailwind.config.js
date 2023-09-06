@@ -5,6 +5,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        display: 'Poppins',
+      },
       keyframes: {
         enter: {
           from: { opacity: 0, transform: "translateY(-50%)" },

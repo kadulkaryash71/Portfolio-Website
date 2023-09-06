@@ -16,11 +16,11 @@ function Participations() {
     const CardEl = ({ title, link, body, authority }) => {
         return (
             <div class={`${isViewAll ? "animate-entrance" : "animate-exit"} flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row cursor-pointer transition-all duration-500 hover:shadow-md hover:shadow-slate-500 hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700`}>
-                <img class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-l-lg" src={link} alt={title + ` certificate`} />
+                <img class="object-cover h-auto w-full rounded-t-lg md:h-auto md:w-48 md:rounded-lg" src={link} alt={title + ` certificate`} />
                 <div class="flex flex-col items-center md:items-start justify-between p-4 leading-normal">
                     <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{title}</h5>
                     <p class="mb-2 text-base italic font-normal text-gray-700 dark:text-gray-400">Issued by: {authority}</p>
-                    <p class="mb-2 font-normal text-gray-700 dark:text-gray-400">{body} blah blah blah</p>
+                    <p class="mb-2 font-normal text-base text-gray-700 dark:text-gray-400">{body}</p>
                 </div>
             </div>
         )
@@ -47,37 +47,37 @@ const certsCol = [
         title: "30 Days of Google Cloud",
         authority: "Google Developers Students Club (GDSC-VIT)",
         link: GDSC,
-        body: ""
+        body: "Participants were expected to complete two tracks outlining DevOps and Data Analytics each. Completed the DevOps track where one could learn creating and managing VM instances, machine images, orchestration with Kubernetes, VPCs, Firewalls, etc."
     },
     {
         title: "Blockchain A-Z™",
         authority: "Udemy",
         link: Blockchain,
-        body: ""
+        body: "Mechanism of a general blockchain; Case Studies of Ethereum, Bitcoin, and BitcoinCash; Blockchain Protocols; UTXOs; Protocols v/s Tokens v/s Coins; Introduction to other blockchains like Ripple; Creating and managing a blockchain using Python; Wallets; Forking, etc."
     },
     {
         title: "Google Crash Course on Python",
         authority: "Coursera",
         link: PythonAutomation,
-        body: ""
+        body: "Introductory course on Python for beginners starting from scratch. The course began with the installation and introduction to the Python Interpreter, followed by variables, then data types and data structures. The course comprises of small tasks after each module which applied the skills gained from video lectures. Finally, the course ended with a WordCloud formation project."
     },
     {
         title: "AWS Capstone Project",
         authority: "GreatLearning",
         link: AWSP,
-        body: ""
+        body: "A guided project on how to host a static webpage/website using AWS Route53, VPC, and AppSync."
     },
     {
-        title: "Sparks Basics",
+        title: "Apache Spark Basics",
         authority: "GreatLearning",
         link: Sparks,
-        body: ""
+        body: "Introduction and applications of Apache Spark."
     },
     {
         title: "Introduction to Deep Learning",
         authority: "GreatLearning",
         link: DL,
-        body: ""
+        body: "Architecture and working of a Deep Learning model."
     },
     {
         title: "Reverse Coding Participation Certificate",

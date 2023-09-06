@@ -16,7 +16,7 @@ const WorkEx = () => {
             active: true,
             location: "Remote",
             role: "Data Science Intern",
-            desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde natus mollitia fugiat doloremque eos error.",
+            desc: "The internship aims to build a network of graduates on LinkedIn through mentoring and peer review programme called Graduate Rotational Internship Training (GRIP). Stock Market Prediction using Python was a system developed using a Convolutional Neural Network. It successfully achieved 96% accuracy in prediction of any stock's closing price.",
             enableButton: true,
             buttonText: "View Offer Letter",
             buttonIcon: "",
@@ -30,7 +30,7 @@ const WorkEx = () => {
             active: false,
             location: "Remote",
             role: "Frontend Web Developer Intern",
-            desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde natus mollitia fugiat doloremque eos error.",
+            desc: "CloudKakshaa was a platform web-based platform developed under Teach For India for the underprivileged children from government schools of India who lacked access to education because of lockdown during the COVID-19 pandemic. Converting text-based content to web-viewable content, maintaining PhpMyAdmin, generating assessment forms, and brainstorming new features for the system were some of the prominent responsibilites of this role.",
             enableButton: true,
             buttonText: "View Experience Letter",
             buttonIcon: "",
@@ -44,7 +44,7 @@ const WorkEx = () => {
             active: false,
             location: "Mumbai, Maharashtra, India",
             role: "Technical Workforce",
-            desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde natus mollitia fugiat doloremque eos error.",
+            desc: "By upholding a high professional standard among its members, the Information Technology Students Association (ITSA) works to enhance the practice and use of information technology and cutting-edge technology. A typical ITSA employee's job is to handle all of the technical details of any event that is organized, whether it is online or offline. All of its members share in the duties, which fosters cooperation; striving for a seamless flow of an event.",
             enableButton: true,
             buttonText: "View Experience Letter",
             buttonIcon: "",
@@ -57,8 +57,8 @@ const WorkEx = () => {
             companyLogo: CSI,
             active: false,
             location: "Mumbai, Maharashtra, India",
-            role: "Technical Workforce",
-            desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde natus mollitia fugiat doloremque eos error.",
+            role: "Assistant Webmaster",
+            desc: "Jointly developed a website for CSI-VIT as a team of 4 members. The platform showed upcoming events organised by the committee. Ease of registration and information flow were the primary goals of this website. HTML5, TailwindCSS, Bootstrap, CSS3, JavaScript, and Node.js were largely used in its development.",
             enableButton: false,
             buttonText: "View Experience Letter",
             buttonIcon: "",
@@ -73,11 +73,11 @@ const WorkEx = () => {
     }
 
     return (
-        <div id="experience" className="container my-4">
-            <h2 className="my-6 text-3xl font-bold">Experience</h2>
+        <div id="experience" className="md:w-7/12">
+            <h2 className="text-3xl font-bold">Experience</h2>
             <ol className="relative border-l mx-5 my-2 py-3 border-gray-200 dark:border-gray-700">
                 {workTimelineEl.map((item, index) =>
-                    <li key={index} className="mb-10 ml-9">
+                    <li key={index} className="mb-10 ml-9 md:w-5/6">
                         {item.active && <span className={`animate-ping absolute flex items-center justify-center w-10 h-10 bg-blue-100 rounded-full -left-5 ring-8 ring-white dark:ring-gray-900 ${item.active ? 'dark:bg-green-500' : 'dark:bg-blue-900'}`} />}
 
                         <span className={`absolute flex items-center justify-center w-10 h-10 bg-blue-100 rounded-full -left-5 ring-8 ring-white dark:ring-gray-900 ${item.active ? 'dark:bg-green-500' : 'dark:bg-blue-900'}`}>
@@ -91,7 +91,7 @@ const WorkEx = () => {
                         <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500 transition-all duration-300 hover:text-gray-300">{item.periodFrom} —  {item.periodTo}</time>
                         <p className="mb-1 text-lg font-normal text-gray-500 text-justify transition-all duration-300 hover:text-gray-100 dark:text-gray-400">{item.role}</p>
                         <p className="mb-4 text-base font-normal text-gray-500 text-justify transition-all duration-300 hover:text-gray-100 dark:text-gray-400">{item.desc}</p>
-                        {item.enableButton && <a href={item.buttonLink} target="_blank" className="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg transition-all duration-300 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:outline-none focus:ring-gray-200 focus:text-blue-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700 dark:focus:ring-gray-700"><svg className="w-3.5 h-3.5 mr-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                        {item.enableButton && <a href={item.buttonLink} target="_blank" rel="noreferrer" className="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg transition-all duration-300 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:outline-none focus:ring-gray-200 focus:text-blue-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700 dark:focus:ring-gray-700"><svg className="w-3.5 h-3.5 mr-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
                             <path d="M14.707 7.793a1 1 0 0 0-1.414 0L11 10.086V1.5a1 1 0 0 0-2 0v8.586L6.707 7.793a1 1 0 1 0-1.414 1.414l4 4a1 1 0 0 0 1.416 0l4-4a1 1 0 0 0-.002-1.414Z" />
                             <path d="M18 12h-2.55l-2.975 2.975a3.5 3.5 0 0 1-4.95 0L4.55 12H2a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-4a2 2 0 0 0-2-2Zm-3 5a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z" />
                         </svg>{item.buttonText}</a>}

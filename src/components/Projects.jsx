@@ -21,8 +21,8 @@ const ProjectCard = ({ title, subtitle, from, to, techstack, desc, demo, github 
                 <span className="text-base"></span>
             </div>
             <div className="btn-container w-full">
-            <a href={demo && demo} className="mx-2 my-2 p-2 w-full flex items-center justify-center text-slate-300 bg-blue-800 ring-2 ring-blue-600 rounded-md cursor-pointer text-lg transition-all duration-500 hover:bg-blue-900 hover:ring-slate-200 hover:text-white hover:scale-95"><span className="mx-1"><FaFirefoxBrowser /></span> View Demo</a>
-            <a href={github && github} className="mx-2 my-2 p-2 w-full flex items-center justify-center text-slate-300 bg-gray-800 ring-2 ring-gray-600 rounded-md cursor-pointer text-lg transition-all duration-500 hover:bg-black hover:ring-blue-200 hover:text-white hover:scale-95"><span className="mx-1"><FaGithub /></span> GitHub Repo</a>
+            <a href={demo && demo} target="_blank" rel="noreferrer" className="mx-2 my-2 p-2 w-full flex items-center justify-center text-slate-300 bg-blue-800 ring-2 ring-blue-600 rounded-md cursor-pointer text-lg transition-all duration-500 hover:bg-blue-900 hover:ring-slate-200 hover:text-white hover:scale-95"><span className="mx-1"><FaFirefoxBrowser /></span> View Demo</a>
+            <a href={github && github} target="_blank" rel="noreferrer" className="mx-2 my-2 p-2 w-full flex items-center justify-center text-slate-300 bg-gray-800 ring-2 ring-gray-600 rounded-md cursor-pointer text-lg transition-all duration-500 hover:bg-black hover:ring-blue-200 hover:text-white hover:scale-95"><span className="mx-1"><FaGithub /></span> GitHub Repo</a>
 
             </div>
         </div>
@@ -39,9 +39,9 @@ function Projects() {
             periodFrom: "November 2022",
             periodTo: "March 2023",
             techstack: "",
-            desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora inventore mollitia ab aut unde consequatur pariatur, totam a blanditiis hic dicta alias laudantium expedita quo quas voluptates sapiente ipsum iste!",
+            desc: "The goal of this project is to predict the chance of a student getting an admit from his/her dream university abroad. It could achieve an 85% accuracy rate. The secondary features include: SOP grading, chatbot using Amazon Lex, and online student network. It was developed using React, Bootstrap, Python — Flask and Tensorflow.",
             demo: "",
-            github: ""
+            github: "https://github.com/kadulkaryash71/university-prediction"
         },
         {
             title: "UniMate Connect",
@@ -49,9 +49,9 @@ function Projects() {
             techstack: "",
             periodFrom: "March 2023",
             periodTo: "June 2023",
-            desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora inventore mollitia ab aut unde consequatur pariatur, totam a blanditiis hic dicta alias laudantium expedita quo quas voluptates sapiente ipsum iste!",
-            demo: "",
-            github: ""
+            desc: "Extending the online student network platform into a full-fledged community platform. Since the GenZ are quite used to various social media platforms, UniMate connect was developed with the intention of faster information flow in a conventional environment. MERN stack was employed in its development. Further developments include GraphQL as well.",
+            demo: "https://g999lw-3000.csb.app/",
+            github: "https://github.com/kadulkaryash71/UniMate"
         },
         {
             title: "Decentralised Document Storage",
@@ -59,9 +59,9 @@ function Projects() {
             techstack: "",
             periodFrom: "February 2023",
             periodTo: "March 2023",
-            desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora inventore mollitia ab aut unde consequatur pariatur, totam a blanditiis hic dicta alias laudantium expedita quo quas voluptates sapiente ipsum iste!",
+            desc: "Blockchain is undergoing a metamorphosis as a field, and each day we learn about significant new advancements and uses. In order to avoid the need for elaborate storage infrastructures, an effort was made to store and access files directly on the blockchain. It was successful in storing both text and image files on the blockchain. The most important component of the project was IPFS, which used the Solidity programming language, together with Ethereum.",
             demo: "",
-            github: ""
+            github: "https://github.com/EcommerceBlockchain/ecommerceblockchain"
         },
     ]
 

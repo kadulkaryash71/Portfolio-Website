@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaGithub, FaFirefoxBrowser, FaReact, FaNodeJs, FaPython, FaFlask, FaDatabase, FaJava, FaHtml5, FaCss3 } from "react-icons/fa";
+import { FaReact, FaNodeJs, FaPython, FaFlask, FaDatabase, FaJava, FaHtml5, FaCss3 } from "react-icons/fa";
 import { BiLogoMongodb } from "react-icons/bi";
 import { SiExpress, SiTensorflow, SiCplusplus, SiTailwindcss } from "react-icons/si";
 import { BsDatabaseFillGear } from "react-icons/bs";
