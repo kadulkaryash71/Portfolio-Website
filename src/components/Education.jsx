@@ -12,10 +12,10 @@ const Education = () => {
             periodFrom: "September 2023",
             periodTo: "October 2024",
             institute: "Dublin City University",
-            active: true,
+            active: false,
             location: "Dublin, Ireland",
             degree: "Masters in Computing (MSc. in Computing - major in Data Analytics)",
-            desc: "I am thrilled to announce that I will be joining this world renowned institute of Ireland. I am announcing this exclusively here on my portfolio in advance. For more such updates about me, subscribe to my newsletter at the bottom of this page!",
+            desc: "I am thrilled to share that I was a part of this world renowned institute of Ireland. At Dublin City University, I earned a 1st Class Honours (1:1), studying majorly Data Analytics, Artificial Intelligence, Cloud Technologies, and Statistics. My dissertation on Machine Unlearning strengthened my research, analytical, and presentation skills, making it an exciting academic journey.",
             enableButton: true,
             buttonText: "View Offer Letter",
             buttonLink: "https://drive.google.com/file/d/14wlkfB9ckeRVKYvEkF9rgndEOy1wmJBW/view?usp=drive_link"

@@ -3,17 +3,32 @@ import CloudKakshaa from "../assets/icons/CloudKakshaa-logo.jpeg";
 import ITSA from "../assets/icons/ITSA-logo.jpeg";
 import CSI from "../assets/icons/CSI-logo.jpeg";
 import TSF from "../assets/icons/TheSparksFoundation.jpeg";
+import Insight from "../assets/icons/insight_centre_for_data_analytics_logo.jpeg";
 
 
 const WorkEx = () => {
 
     const workTimelineEl = [
         {
+            periodFrom: "July 2024",
+            periodTo: "March 2025",
+            company: "Insight - SFI Research Centre for Data Analytics",
+            companyLogo: Insight,
+            active: true,
+            location: "On-site",
+            role: "Software Developer",
+            desc: "At Insight, I'm developing an ed-tech platform that gamifies spelling quizzes for primary students. I designed the database and built a scalable backend with Django, using HTMX and React for dynamic interactions. The platform leverages GPT-4o for personalized quiz recommendations, enhancing adaptive learning for teachers and students.",
+            enableButton: false,
+            buttonText: "View Experience Letter",
+            buttonIcon: "",
+            buttonLink: ""
+        },
+        {
             periodFrom: "September 2023",
             periodTo: "October 2023",
             company: "The Sparks Foundation",
             companyLogo: TSF,
-            active: true,
+            active: false,
             location: "Remote",
             role: "Data Science Intern",
             desc: "The internship aims to build a network of graduates on LinkedIn through mentoring and peer review programme called Graduate Rotational Internship Training (GRIP). Stock Market Prediction using Python was a system developed using a Convolutional Neural Network. It successfully achieved 96% accuracy in prediction of any stock's closing price.",
